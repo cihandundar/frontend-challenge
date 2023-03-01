@@ -1,0 +1,52 @@
+.nav {
+  padding-block: 20px;
+
+  &__container {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    &__link {
+      margin-right: 30px;
+      &:first-child {
+        position: relative;
+        a {
+          > span {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: aquamarine;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            right: 0;
+            top: -25px;
+            margin-right: -15px;
+          }
+        }
+      }
+    }
+    &__img {
+      > img {
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+}
