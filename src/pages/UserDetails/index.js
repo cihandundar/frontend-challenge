@@ -43,7 +43,18 @@ const UserDetails = () => {
             <h2>Posts</h2>
           </Link>
           <div className="details__title__btn">
-            <button onClick={() => dispatch(openModal())}>+ New Post</button>
+            <button
+              className="details__title__btn--newpost"
+              onClick={() => dispatch(openModal())}
+            >
+              + New Post
+            </button>
+            <button
+              className="details__title__btn--delete"
+              onClick={() => handleDeleteFunc(id)}
+            >
+              Delete
+            </button>
           </div>
         </div>
         {isOpen && <Modal />}
@@ -71,7 +82,6 @@ const UserDetails = () => {
             </div>
           ))}
         </div>
-        <button onClick={() => handleDeleteFunc(id)}>Delete</button>
       </div>
     </div>
   );
