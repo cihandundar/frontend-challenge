@@ -27,7 +27,6 @@ const UserDetails = () => {
   }, [dispatch, id]);
 
   const handleDeleteFunc = (id) => {
-    console.log(typeof id);
     dispatch(handleDelete(Number(id)));
     setTimeout(() => {
       navigate("/");
